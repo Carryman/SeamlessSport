@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "4f702dd2-f66c-4a04-82e0-f6373ad645cc",
-    "name": "Sportsbook_1",
+    "name": "Sportsbook",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -87,7 +87,7 @@
                   }
                 }
               ],
-              "_postman_id": "cf3b76e0-c242-42c5-93f2-b1be4f1d6aaf",
+              "id": "cf3b76e0-c242-42c5-93f2-b1be4f1d6aaf",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -123,8 +123,7 @@
                     {
                       "id": "b0fd90c9-39a4-4a00-b301-228af78bc548",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -295,7 +294,7 @@
                   }
                 }
               ],
-              "_postman_id": "f87a5fff-6a87-412a-a9f4-ce23089448e1",
+              "id": "f87a5fff-6a87-412a-a9f4-ce23089448e1",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -316,10 +315,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -430,7 +426,7 @@
                   }
                 }
               ],
-              "_postman_id": "a224bc09-6154-4050-a8e0-6d9848f5a2d8",
+              "id": "a224bc09-6154-4050-a8e0-6d9848f5a2d8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -461,8 +457,7 @@
                       "id": "7733b0b8-0eb5-4ba2-ba62-c094b23d5c9c",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -617,7 +612,7 @@
                   }
                 }
               ],
-              "_postman_id": "bd1594a3-b869-4432-bb77-a504bb96b233",
+              "id": "bd1594a3-b869-4432-bb77-a504bb96b233",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -637,10 +632,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -749,7 +741,7 @@
                   }
                 }
               ],
-              "_postman_id": "32d86fab-ce25-432b-bf7a-5d24b62d2406",
+              "id": "32d86fab-ce25-432b-bf7a-5d24b62d2406",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -780,8 +772,7 @@
                       "id": "8b47088f-771e-43e2-a445-0f5d022fa2a5",
                       "key": "mtcode",
                       "value": "{{wins_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -789,8 +780,7 @@
               "response": []
             }
           ],
-          "_postman_id": "36e6e065-db5d-494b-a528-a90d95ede237",
-          "_postman_isSubFolder": true
+          "id": "36e6e065-db5d-494b-a528-a90d95ede237"
         },
         {
           "name": "Scenario 2 Multi bets refunds(all)",
@@ -867,7 +857,7 @@
                   }
                 }
               ],
-              "_postman_id": "21cecc54-874a-4c8b-be52-f67b53af5a11",
+              "id": "21cecc54-874a-4c8b-be52-f67b53af5a11",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -903,8 +893,7 @@
                     {
                       "id": "db93440b-f844-40ba-9dce-7c9f06023707",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -1057,7 +1046,7 @@
                   }
                 }
               ],
-              "_postman_id": "c3ccea25-96dd-4e86-9b30-406944668c54",
+              "id": "c3ccea25-96dd-4e86-9b30-406944668c54",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1078,10 +1067,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -1187,7 +1173,7 @@
                   }
                 }
               ],
-              "_postman_id": "90332822-28f0-4fd2-948d-f084b377fe49",
+              "id": "90332822-28f0-4fd2-948d-f084b377fe49",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1218,8 +1204,7 @@
                       "id": "34d0c36b-76fb-4b3c-9499-1609810fe76e",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -1309,7 +1294,7 @@
                   }
                 }
               ],
-              "_postman_id": "33a55ea2-83ac-41a5-a27e-2f459e6566e8",
+              "id": "33a55ea2-83ac-41a5-a27e-2f459e6566e8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1330,10 +1315,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/refunds"
               },
@@ -1438,7 +1420,7 @@
                   }
                 }
               ],
-              "_postman_id": "0eca366a-a9f0-407f-9c0b-aa5d929b9a9c",
+              "id": "0eca366a-a9f0-407f-9c0b-aa5d929b9a9c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1469,8 +1451,7 @@
                       "id": "2d9305be-cd6f-4490-975e-e8b3ad5511ef",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -1478,9 +1459,8 @@
               "response": []
             }
           ],
-          "_postman_id": "964e93bb-c0b7-42de-8165-42566ccd7e37",
-          "description": "Bets完之後全部Refund",
-          "_postman_isSubFolder": true
+          "id": "964e93bb-c0b7-42de-8165-42566ccd7e37",
+          "description": "Bets完之後全部Refund"
         },
         {
           "name": "Scenario 3 Multi bets refunds(2/3) cancels(3)",
@@ -1557,7 +1537,7 @@
                   }
                 }
               ],
-              "_postman_id": "65f97391-a377-4038-90ee-c582b9cdc5c7",
+              "id": "65f97391-a377-4038-90ee-c582b9cdc5c7",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1593,8 +1573,7 @@
                     {
                       "id": "9c4b5f15-b2a7-45eb-af06-e1463f75eec8",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -1747,7 +1726,7 @@
                   }
                 }
               ],
-              "_postman_id": "79cb6ead-140e-458e-ae6e-fcea083c9ba6",
+              "id": "79cb6ead-140e-458e-ae6e-fcea083c9ba6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1768,10 +1747,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -1877,7 +1853,7 @@
                   }
                 }
               ],
-              "_postman_id": "0ef594db-53a1-40bd-88dc-79651f9eaf4d",
+              "id": "0ef594db-53a1-40bd-88dc-79651f9eaf4d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -1908,8 +1884,7 @@
                       "id": "b827672e-27fb-4ee5-8f8f-e3547565d652",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -2001,7 +1976,7 @@
                   }
                 }
               ],
-              "_postman_id": "22d5fa91-3133-4187-9ec2-f84ff61dac88",
+              "id": "22d5fa91-3133-4187-9ec2-f84ff61dac88",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2022,10 +1997,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/refunds"
               },
@@ -2128,7 +2100,7 @@
                   }
                 }
               ],
-              "_postman_id": "2781ce9c-e7ad-468f-a2f2-8f428c1d7dfa",
+              "id": "2781ce9c-e7ad-468f-a2f2-8f428c1d7dfa",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2159,8 +2131,7 @@
                       "id": "11a8d4cb-3cb0-446e-80f8-9ab6e2fc6d38",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -2231,7 +2202,7 @@
                   }
                 }
               ],
-              "_postman_id": "b2f9622c-ba83-4eb6-80c9-17e19b8d9e92",
+              "id": "b2f9622c-ba83-4eb6-80c9-17e19b8d9e92",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2252,10 +2223,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/cancel"
               },
@@ -2360,7 +2328,7 @@
                   }
                 }
               ],
-              "_postman_id": "3dde00c3-fcdb-4047-9384-2669bab4d32c",
+              "id": "3dde00c3-fcdb-4047-9384-2669bab4d32c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2391,8 +2359,7 @@
                       "id": "2b41321e-2bf1-46e3-a509-af7b5f923869",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -2400,9 +2367,8 @@
               "response": []
             }
           ],
-          "_postman_id": "ee1abe7d-498e-47f1-b86e-c6c9c05361c9",
-          "description": "Bets(1/2/3) -> Refunds(2/3) -> Cancels(3)",
-          "_postman_isSubFolder": true
+          "id": "ee1abe7d-498e-47f1-b86e-c6c9c05361c9",
+          "description": "Bets(1/2/3) -> Refunds(2/3) -> Cancels(3)"
         },
         {
           "name": "Scenario 4 Multi bets amends",
@@ -2482,7 +2448,7 @@
                   }
                 }
               ],
-              "_postman_id": "ef2a3958-bfa8-4d71-be12-818b0dc31a29",
+              "id": "ef2a3958-bfa8-4d71-be12-818b0dc31a29",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2518,8 +2484,7 @@
                     {
                       "id": "3b51ce83-9b22-40c0-aa25-0718bb1e4e60",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -2684,7 +2649,7 @@
                   }
                 }
               ],
-              "_postman_id": "143c40de-ecfd-4ad2-82a6-639ba03ff970",
+              "id": "143c40de-ecfd-4ad2-82a6-639ba03ff970",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2705,10 +2670,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -2818,7 +2780,7 @@
                   }
                 }
               ],
-              "_postman_id": "6ea1f89d-4969-4ca6-ad10-80149b3e0d4b",
+              "id": "6ea1f89d-4969-4ca6-ad10-80149b3e0d4b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2849,8 +2811,7 @@
                       "id": "6394ee8a-9e66-44c7-9281-0a64a5e1836a",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -3005,7 +2966,7 @@
                   }
                 }
               ],
-              "_postman_id": "e85ec22c-ac9b-43e8-9899-1b6b437583c3",
+              "id": "e85ec22c-ac9b-43e8-9899-1b6b437583c3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3025,10 +2986,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -3137,7 +3095,7 @@
                   }
                 }
               ],
-              "_postman_id": "9611bad4-59e8-4208-8f67-c1273fcb2352",
+              "id": "9611bad4-59e8-4208-8f67-c1273fcb2352",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3168,8 +3126,7 @@
                       "id": "6a5d9343-d12e-458b-9daf-cbb8d1ea2c4b",
                       "key": "mtcode",
                       "value": "{{wins_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -3284,7 +3241,7 @@
                   }
                 }
               ],
-              "_postman_id": "9d60fced-eb43-43f8-87eb-476a9e45be2c",
+              "id": "9d60fced-eb43-43f8-87eb-476a9e45be2c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3304,10 +3261,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -3388,7 +3342,7 @@
                   }
                 }
               ],
-              "_postman_id": "13776872-6bc1-4ce5-9448-cea6c75f7866",
+              "id": "13776872-6bc1-4ce5-9448-cea6c75f7866",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3424,8 +3378,7 @@
                     {
                       "id": "f9cf4317-b14d-459c-b797-e9ca5e7808f9",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -3534,7 +3487,7 @@
                   }
                 }
               ],
-              "_postman_id": "fd8f8e51-49f5-4abb-9aee-7e3d12d35cad",
+              "id": "fd8f8e51-49f5-4abb-9aee-7e3d12d35cad",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3554,10 +3507,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"dedit\",\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"dedit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"dedit\",\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"dedit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -3638,7 +3588,7 @@
                   }
                 }
               ],
-              "_postman_id": "c4afee77-9adc-404d-9641-2296b1f851d1",
+              "id": "c4afee77-9adc-404d-9641-2296b1f851d1",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3674,8 +3624,7 @@
                     {
                       "id": "79f83bbe-a705-4d1b-8821-81ebfcb8f769",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -3683,11 +3632,10 @@
               "response": []
             }
           ],
-          "_postman_id": "7ded281f-f5ab-48cc-b0a1-ac4e0d56f56a",
-          "_postman_isSubFolder": true
+          "id": "7ded281f-f5ab-48cc-b0a1-ac4e0d56f56a"
         }
       ],
-      "_postman_id": "fb86e187-0349-4727-b48e-0b7370784079"
+      "id": "fb86e187-0349-4727-b48e-0b7370784079"
     },
     {
       "name": "Unit Test",
@@ -3847,7 +3795,7 @@
                   }
                 }
               ],
-              "_postman_id": "06a50f6c-24e4-4072-9496-01d3401ec7ba",
+              "id": "06a50f6c-24e4-4072-9496-01d3401ec7ba",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3868,10 +3816,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -3956,7 +3901,7 @@
                   }
                 }
               ],
-              "_postman_id": "4e1b4eeb-47c0-4cdf-be1e-68e3bf458920",
+              "id": "4e1b4eeb-47c0-4cdf-be1e-68e3bf458920",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3977,10 +3922,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4067,7 +4009,7 @@
                   }
                 }
               ],
-              "_postman_id": "4cef72ea-4658-4e30-a89b-91e0ccf07e64",
+              "id": "4cef72ea-4658-4e30-a89b-91e0ccf07e64",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4088,10 +4030,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4180,7 +4119,7 @@
                   }
                 }
               ],
-              "_postman_id": "a08adf68-2026-4d6c-8cb7-dd046cb68c54",
+              "id": "a08adf68-2026-4d6c-8cb7-dd046cb68c54",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4201,10 +4140,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4293,7 +4229,7 @@
                   }
                 }
               ],
-              "_postman_id": "b4a110a8-213e-4330-bad5-e306b15fa428",
+              "id": "b4a110a8-213e-4330-bad5-e306b15fa428",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4314,10 +4250,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4406,7 +4339,7 @@
                   }
                 }
               ],
-              "_postman_id": "318b9b75-8e82-420e-b787-36311cb2e208",
+              "id": "318b9b75-8e82-420e-b787-36311cb2e208",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4427,10 +4360,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4519,7 +4449,7 @@
                   }
                 }
               ],
-              "_postman_id": "e0c40397-518d-4ce6-b6ff-72d97c8eedc9",
+              "id": "e0c40397-518d-4ce6-b6ff-72d97c8eedc9",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4540,10 +4470,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4632,7 +4559,7 @@
                   }
                 }
               ],
-              "_postman_id": "8739f587-c72d-4315-b54d-40ecf4e1e059",
+              "id": "8739f587-c72d-4315-b54d-40ecf4e1e059",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4653,10 +4580,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n     \r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n     \r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4744,7 +4668,7 @@
                   }
                 }
               ],
-              "_postman_id": "0529f56f-5321-4903-a6ea-ee43752fb925",
+              "id": "0529f56f-5321-4903-a6ea-ee43752fb925",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4765,10 +4689,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n     \"roundid\": \"{{bets_round2}}\",\r\n      \r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n     \"roundid\": \"{{bets_round2}}\",\r\n      \r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4857,7 +4778,7 @@
                   }
                 }
               ],
-              "_postman_id": "4beafb57-e6da-42a6-9fd6-78ed54648984",
+              "id": "4beafb57-e6da-42a6-9fd6-78ed54648984",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4878,10 +4799,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}1\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"2020-08-06T04:30:00\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}2\",\r\n      \"amount\": 1,\r\n     \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"2020-08-06T04:30:00\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}1\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"2020-08-06T04:30:00\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}2\",\r\n      \"amount\": 1,\r\n     \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"2020-08-06T04:30:00\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -4969,7 +4887,7 @@
                   }
                 }
               ],
-              "_postman_id": "f0c0660f-5c21-4bb9-867e-166ec3652d79",
+              "id": "f0c0660f-5c21-4bb9-867e-166ec3652d79",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4990,10 +4908,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}1\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}1\",\r\n      \"amount\": 1,\r\n     \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"2020-08-06T04:30:00\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}1\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}1\",\r\n      \"amount\": 1,\r\n     \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"2020-08-06T04:30:00\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -5078,7 +4993,7 @@
                   }
                 }
               ],
-              "_postman_id": "4466369f-1d22-4159-b784-98c469055814",
+              "id": "4466369f-1d22-4159-b784-98c469055814",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5099,10 +5014,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -5211,7 +5123,7 @@
                   }
                 }
               ],
-              "_postman_id": "849e130a-ca36-40e0-aa00-5254339f37a0",
+              "id": "849e130a-ca36-40e0-aa00-5254339f37a0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5232,10 +5144,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 999999999999,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 999999999999,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 999999999999,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 999999999999,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -5319,7 +5228,7 @@
                   }
                 }
               ],
-              "_postman_id": "6f679e56-31e7-48a8-ad87-0a0d83ed2d58",
+              "id": "6f679e56-31e7-48a8-ad87-0a0d83ed2d58",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5340,10 +5249,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"fakeplayer\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"fakeplayer\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": 1,\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -5449,7 +5355,7 @@
                   }
                 }
               ],
-              "_postman_id": "ea62cdda-6d44-49b4-baa3-a13043a9a3da",
+              "id": "ea62cdda-6d44-49b4-baa3-a13043a9a3da",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5480,8 +5386,7 @@
                       "id": "a131b7d3-b5f4-45a8-a0c2-fd85a6e2f0c2",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -5489,8 +5394,7 @@
               "response": []
             }
           ],
-          "_postman_id": "4d2c41d2-76e5-466c-a11a-039a47f5d337",
-          "_postman_isSubFolder": true
+          "id": "4d2c41d2-76e5-466c-a11a-039a47f5d337"
         },
         {
           "name": "Wins",
@@ -5567,7 +5471,7 @@
                   }
                 }
               ],
-              "_postman_id": "b40e7111-75b0-400f-a4bb-2301f19cef59",
+              "id": "b40e7111-75b0-400f-a4bb-2301f19cef59",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5603,8 +5507,7 @@
                     {
                       "id": "de755e30-a286-4040-a448-6e2231342aa8",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -5757,7 +5660,7 @@
                   }
                 }
               ],
-              "_postman_id": "2487e5ad-4229-4177-a47f-824b0b8b9a6e",
+              "id": "2487e5ad-4229-4177-a47f-824b0b8b9a6e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5778,10 +5681,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -5935,7 +5835,7 @@
                   }
                 }
               ],
-              "_postman_id": "45f0da06-56fd-4ad9-94a8-304cb4ebffe0",
+              "id": "45f0da06-56fd-4ad9-94a8-304cb4ebffe0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5955,10 +5855,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -6064,7 +5961,7 @@
                   }
                 }
               ],
-              "_postman_id": "cf0299e4-031b-4ba1-be22-ce3c80f8f5ef",
+              "id": "cf0299e4-031b-4ba1-be22-ce3c80f8f5ef",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6095,8 +5992,7 @@
                       "id": "b9ab4090-8307-4191-9eb2-c0d98486bdbf",
                       "key": "mtcode",
                       "value": "{{bets_mtcode1}}",
-                      "description": "{{bet_mtcode}}",
-                      "type": "string"
+                      "description": "{{bet_mtcode}}"
                     }
                   ]
                 }
@@ -6181,7 +6077,7 @@
                   }
                 }
               ],
-              "_postman_id": "55ab0663-6e17-48e1-ba23-5488d4e713f0",
+              "id": "55ab0663-6e17-48e1-ba23-5488d4e713f0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6201,10 +6097,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 20,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 20,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -6284,7 +6177,7 @@
                   }
                 }
               ],
-              "_postman_id": "9e0543e9-c43d-4b3e-84b8-109bd2328254",
+              "id": "9e0543e9-c43d-4b3e-84b8-109bd2328254",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6304,10 +6197,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 20,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 20,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -6407,7 +6297,7 @@
                   }
                 }
               ],
-              "_postman_id": "32f7fd58-7987-4191-b020-c494eab3b6b6",
+              "id": "32f7fd58-7987-4191-b020-c494eab3b6b6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6427,10 +6317,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \r\n          \"amount\": 20,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \r\n          \"amount\": 20,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -6530,7 +6417,7 @@
                   }
                 }
               ],
-              "_postman_id": "c3d38240-c5b2-48bd-84b0-3dd0358d9c81",
+              "id": "c3d38240-c5b2-48bd-84b0-3dd0358d9c81",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6550,10 +6437,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -6653,7 +6537,7 @@
                   }
                 }
               ],
-              "_postman_id": "d2998d20-68fb-4acd-ab1a-3052ac140a3c",
+              "id": "d2998d20-68fb-4acd-ab1a-3052ac140a3c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6673,10 +6557,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -6776,7 +6657,7 @@
                   }
                 }
               ],
-              "_postman_id": "c2cf715b-00ef-4c71-9c68-5529e02316a5",
+              "id": "c2cf715b-00ef-4c71-9c68-5529e02316a5",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6796,10 +6677,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -6899,7 +6777,7 @@
                   }
                 }
               ],
-              "_postman_id": "46fc4e43-637f-46c1-a9cc-8e5670cb5038",
+              "id": "46fc4e43-637f-46c1-a9cc-8e5670cb5038",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6919,10 +6797,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -7006,7 +6881,7 @@
                   }
                 }
               ],
-              "_postman_id": "5816f4c4-8f4e-4787-a964-27f39bda810c",
+              "id": "5816f4c4-8f4e-4787-a964-27f39bda810c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7026,10 +6901,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"2020-09-01T08:15:15-04\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"2020-09-01T08:15:15-04\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"2020-09-01T08:15:15-04\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"2020-09-01T08:15:15-04\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"2020-09-01T08:15:15-04\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"2020-09-01T08:15:15-04\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -7129,7 +7001,7 @@
                   }
                 }
               ],
-              "_postman_id": "f46ba6c1-59a4-4cfb-9499-ed1da4d43ced",
+              "id": "f46ba6c1-59a4-4cfb-9499-ed1da4d43ced",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7149,10 +7021,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -7236,7 +7105,7 @@
                   }
                 }
               ],
-              "_postman_id": "42b4db6d-a150-4bd6-bb1a-79529363f60d",
+              "id": "42b4db6d-a150-4bd6-bb1a-79529363f60d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7256,10 +7125,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n          \r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n          \r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n          \r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n          \r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -7359,7 +7225,7 @@
                   }
                 }
               ],
-              "_postman_id": "fe1d07a1-f067-47dd-bed4-24f58452a80b",
+              "id": "fe1d07a1-f067-47dd-bed4-24f58452a80b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7379,10 +7245,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -7465,7 +7328,7 @@
                   }
                 }
               ],
-              "_postman_id": "6c17d796-a653-4c50-b14f-427b159fc967",
+              "id": "6c17d796-a653-4c50-b14f-427b159fc967",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7485,10 +7348,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\"\r\n\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\"\r\n\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -7572,7 +7432,7 @@
                   }
                 }
               ],
-              "_postman_id": "987fb74e-2db3-418b-918e-6dafad7ac594",
+              "id": "987fb74e-2db3-418b-918e-6dafad7ac594",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7592,10 +7452,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -7679,7 +7536,7 @@
                   }
                 }
               ],
-              "_postman_id": "1cfee665-36cc-46e2-80f9-64e8da08a8d4",
+              "id": "1cfee665-36cc-46e2-80f9-64e8da08a8d4",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7699,18 +7556,14 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"fakeplayer\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"fakeplayer\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":50,\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
               "response": []
             }
           ],
-          "_postman_id": "3ba21c49-34fc-4609-8265-3c67ecb8567d",
-          "_postman_isSubFolder": true
+          "id": "3ba21c49-34fc-4609-8265-3c67ecb8567d"
         },
         {
           "name": "Refunds",
@@ -7790,7 +7643,7 @@
                   }
                 }
               ],
-              "_postman_id": "3e3b18e4-2af4-46f3-ad94-252507fad744",
+              "id": "3e3b18e4-2af4-46f3-ad94-252507fad744",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7826,8 +7679,7 @@
                     {
                       "id": "f4b39047-ad93-4b64-8de7-f81dbdb6aa5f",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -7992,7 +7844,7 @@
                   }
                 }
               ],
-              "_postman_id": "381721e0-21dc-425d-bdfe-72f2b085f3df",
+              "id": "381721e0-21dc-425d-bdfe-72f2b085f3df",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8013,10 +7865,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -8103,7 +7952,7 @@
                   }
                 }
               ],
-              "_postman_id": "6311acb8-a624-4e57-9326-d72e8a3e3f4f",
+              "id": "6311acb8-a624-4e57-9326-d72e8a3e3f4f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8124,10 +7973,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/refunds"
               },
@@ -8166,7 +8012,7 @@
                   }
                 }
               ],
-              "_postman_id": "0cf2be7b-d094-43d3-843e-65928f43d257",
+              "id": "0cf2be7b-d094-43d3-843e-65928f43d257",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8187,10 +8033,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/refunds"
               },
@@ -8229,7 +8072,7 @@
                   }
                 }
               ],
-              "_postman_id": "16aaf9f2-bbb7-4dca-8e7f-b0b14a360968",
+              "id": "16aaf9f2-bbb7-4dca-8e7f-b0b14a360968",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8250,10 +8093,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": null\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": null\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/refunds"
               },
@@ -8292,7 +8132,7 @@
                   }
                 }
               ],
-              "_postman_id": "9119f685-c450-4c36-830c-6b884c2b704b",
+              "id": "9119f685-c450-4c36-830c-6b884c2b704b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8313,18 +8153,14 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"testErrorMtCode\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"testErrorMtCode\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/refunds"
               },
               "response": []
             }
           ],
-          "_postman_id": "64667a91-7ffb-4d8a-bf44-f61c46ee2ce8",
-          "_postman_isSubFolder": true
+          "id": "64667a91-7ffb-4d8a-bf44-f61c46ee2ce8"
         },
         {
           "name": "Cancel",
@@ -8404,7 +8240,7 @@
                   }
                 }
               ],
-              "_postman_id": "72845fef-1243-4150-b18b-466759aed9b6",
+              "id": "72845fef-1243-4150-b18b-466759aed9b6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8440,8 +8276,7 @@
                     {
                       "id": "51b4cc6f-9c2c-4111-acaa-c58c3c67d07a",
                       "key": "account",
-                      "value": "{{account}}",
-                      "type": "string"
+                      "value": "{{account}}"
                     }
                   ]
                 }
@@ -8606,7 +8441,7 @@
                   }
                 }
               ],
-              "_postman_id": "dcadb93b-ba1c-417b-959f-7a9ce22c1202",
+              "id": "dcadb93b-ba1c-417b-959f-7a9ce22c1202",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8627,10 +8462,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -8739,7 +8571,7 @@
                   }
                 }
               ],
-              "_postman_id": "5c458770-86e9-44e6-a6bb-2ca073dad47e",
+              "id": "5c458770-86e9-44e6-a6bb-2ca073dad47e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8760,10 +8592,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/refunds"
               },
@@ -8833,7 +8662,7 @@
                   }
                 }
               ],
-              "_postman_id": "447a3360-592c-49c1-b10d-3c7d5c5dc4a6",
+              "id": "447a3360-592c-49c1-b10d-3c7d5c5dc4a6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8854,10 +8683,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\",\r\n        \"{{bets_mtcode3}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/cancel"
               },
@@ -8906,7 +8732,7 @@
                   }
                 }
               ],
-              "_postman_id": "0473aae3-ad2f-4d6f-ae09-284b3996318d",
+              "id": "0473aae3-ad2f-4d6f-ae09-284b3996318d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8927,10 +8753,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"{{bets_mtcode1}}\",\r\n        \"{{bets_mtcode2}}\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/cancel"
               },
@@ -8979,7 +8802,7 @@
                   }
                 }
               ],
-              "_postman_id": "9d686b50-9f4c-4429-bfd3-343a084215ed",
+              "id": "9d686b50-9f4c-4429-bfd3-343a084215ed",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9000,18 +8823,14 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"mtcode\": [\r\n        \"fakemtcode\"\r\n    ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n    \"mtcode\": [\r\n        \"fakemtcode\"\r\n    ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/cancel"
               },
               "response": []
             }
           ],
-          "_postman_id": "5f8d02b8-7372-46c9-a155-832708e6f27a",
-          "_postman_isSubFolder": true
+          "id": "5f8d02b8-7372-46c9-a155-832708e6f27a"
         },
         {
           "name": "Amends",
@@ -9162,7 +8981,7 @@
                   }
                 }
               ],
-              "_postman_id": "3b829f34-71e3-4bb9-a118-f777e860df8d",
+              "id": "3b829f34-71e3-4bb9-a118-f777e860df8d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9183,10 +9002,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"account\": \"{{account}}\",\r\n  \"gamehall\": \"cq9\",\r\n  \"gamecode\": \"BPUP2019\",\r\n  \"session\": \"\",\r\n  \"data\": [\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode1}}\",\r\n      \"amount\": {{bets_1}},\r\n      \"roundid\": \"{{bets_round1}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode2}}\",\r\n      \"amount\": {{bets_2}},\r\n      \"roundid\": \"{{bets_round2}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    },\r\n    {\r\n      \"mtcode\": \"{{bets_mtcode3}}\",\r\n      \"amount\": {{bets_3}},\r\n      \"roundid\": \"{{bets_round3}}\",\r\n      \"eventtime\": \"{{datetime}}\"\r\n    }\r\n   \r\n  ],\r\n  \"createTime\": \"{{datetime}}\"\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/bets"
               },
@@ -9340,7 +9156,7 @@
                   }
                 }
               ],
-              "_postman_id": "65f615a3-010a-4d40-9847-7f1059af3b81",
+              "id": "65f615a3-010a-4d40-9847-7f1059af3b81",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9360,10 +9176,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode1}}\",\r\n          \"amount\": {{bets_1_win}},\r\n          \"validbet\":{{bets_1_win}},\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode2}}\",\r\n          \"amount\": {{bets_2_win}},\r\n          \"validbet\":{{bets_2_win}},\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{wins_mtcode3}}\",\r\n          \"amount\": {{bets_3_win}},\r\n          \"validbet\":{{bets_3_win}},\r\n          \"roundid\": \"{{bets_round3}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\",\r\n          \"gamehall\": \"cq9\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/wins"
               },
@@ -9472,7 +9285,7 @@
                   }
                 }
               ],
-              "_postman_id": "5d9a2e56-b9b9-4c45-890d-b4498a64f063",
+              "id": "5d9a2e56-b9b9-4c45-890d-b4498a64f063",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9492,10 +9305,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round1}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -9579,7 +9389,7 @@
                   }
                 }
               ],
-              "_postman_id": "5face911-38d2-473b-97ae-67d8e7bff175",
+              "id": "5face911-38d2-473b-97ae-67d8e7bff175",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9599,10 +9409,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -9686,7 +9493,7 @@
                   }
                 }
               ],
-              "_postman_id": "fba70237-941d-45f4-a1e6-a04c2375cb02",
+              "id": "fba70237-941d-45f4-a1e6-a04c2375cb02",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9706,10 +9513,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -9793,7 +9597,7 @@
                   }
                 }
               ],
-              "_postman_id": "6283ccd1-8def-49ec-a957-af97d42ec69f",
+              "id": "6283ccd1-8def-49ec-a957-af97d42ec69f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9813,10 +9617,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -9900,7 +9701,7 @@
                   }
                 }
               ],
-              "_postman_id": "420562ad-3c55-4b5a-8b08-7e0c1cc31656",
+              "id": "420562ad-3c55-4b5a-8b08-7e0c1cc31656",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -9920,10 +9721,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10007,7 +9805,7 @@
                   }
                 }
               ],
-              "_postman_id": "0520b9d4-a9a1-4ee2-9868-cee4db18e7a9",
+              "id": "0520b9d4-a9a1-4ee2-9868-cee4db18e7a9",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10027,10 +9825,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10114,7 +9909,7 @@
                   }
                 }
               ],
-              "_postman_id": "6d2df0ae-2b34-439a-b7c9-d35d881f4e8f",
+              "id": "6d2df0ae-2b34-439a-b7c9-d35d881f4e8f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10134,10 +9929,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10220,7 +10012,7 @@
                   }
                 }
               ],
-              "_postman_id": "66c98e57-c1fb-403f-8bbe-c3a9a3feb49e",
+              "id": "66c98e57-c1fb-403f-8bbe-c3a9a3feb49e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10240,10 +10032,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n         \r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n         \r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10327,7 +10116,7 @@
                   }
                 }
               ],
-              "_postman_id": "377a629d-5d9e-4222-962f-c9afbeb4eeb0",
+              "id": "377a629d-5d9e-4222-962f-c9afbeb4eeb0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10347,10 +10136,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"2020-09-02T02:07:02.126-04\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"2020-09-02T02:07:02.126-04\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"2020-09-02T02:07:02.126-04\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"2020-09-02T02:07:02.126-04\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10451,7 +10237,7 @@
                   }
                 }
               ],
-              "_postman_id": "1713a1fb-efe8-45b1-9d79-c6a8ae15b0df",
+              "id": "1713a1fb-efe8-45b1-9d79-c6a8ae15b0df",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10471,10 +10257,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\"\r\n          \r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\"\r\n          \r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10558,7 +10341,7 @@
                   }
                 }
               ],
-              "_postman_id": "a1b13b31-acd1-4d5b-89f3-485203b1b3a9",
+              "id": "a1b13b31-acd1-4d5b-89f3-485203b1b3a9",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10578,10 +10361,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10665,7 +10445,7 @@
                   }
                 }
               ],
-              "_postman_id": "1f382bda-f7b3-48de-aeea-8705a0291697",
+              "id": "1f382bda-f7b3-48de-aeea-8705a0291697",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10685,10 +10465,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\"\r\n      \r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\"\r\n      \r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10772,7 +10549,7 @@
                   }
                 }
               ],
-              "_postman_id": "fb160e71-b1d7-44d3-804b-b00e1b494cd4",
+              "id": "fb160e71-b1d7-44d3-804b-b00e1b494cd4",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10792,10 +10569,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10879,7 +10653,7 @@
                   }
                 }
               ],
-              "_postman_id": "e64e86ab-43ec-4fdb-8939-bf80a3226b5c",
+              "id": "e64e86ab-43ec-4fdb-8939-bf80a3226b5c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -10899,10 +10673,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n     \r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n     \r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -10986,7 +10757,7 @@
                   }
                 }
               ],
-              "_postman_id": "e2bdec8d-f11a-4408-a3a0-e2ed8c0782f3",
+              "id": "e2bdec8d-f11a-4408-a3a0-e2ed8c0782f3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -11006,10 +10777,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": -200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": -200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -11093,7 +10861,7 @@
                   }
                 }
               ],
-              "_postman_id": "340457e4-bf9c-4517-869d-99be1ed09bea",
+              "id": "340457e4-bf9c-4517-869d-99be1ed09bea",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -11113,10 +10881,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"{{account}}\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": -100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
@@ -11197,7 +10962,7 @@
                   }
                 }
               ],
-              "_postman_id": "04481948-6af2-41cf-baf9-7f64db23f403",
+              "id": "04481948-6af2-41cf-baf9-7f64db23f403",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -11217,21 +10982,17 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"fakeplayer\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\r\n  \"list\": [\r\n    {\r\n      \"account\": \"fakeplayer\",\r\n      \"event\": [\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode3}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        },\r\n        {\r\n          \"mtcode\": \"{{amend_mtcode4}}\",\r\n          \"amount\": 100,\r\n          \"validbet\":100,\r\n          \"action\": \"credit\",\r\n          \"roundid\": \"{{bets_round2}}\",\r\n          \"eventtime\": \"{{datetime}}\",\r\n          \"gamecode\": \"BPUP2019\"\r\n        }\r\n      ],\r\n      \"eventtime\": \"{{datetime}}\",\r\n      \"amount\": 200,\r\n      \"action\": \"credit\",\r\n      \"ucode\": \"{{ucode}}\"\r\n    }\r\n  ]\r\n}"
                 },
                 "url": "{{swclient}}/transaction/game/amends"
               },
               "response": []
             }
           ],
-          "_postman_id": "1b1dd826-5693-4c57-9efc-d9cb67b4ec06",
-          "_postman_isSubFolder": true
+          "id": "1b1dd826-5693-4c57-9efc-d9cb67b4ec06"
         }
       ],
-      "_postman_id": "683b73f4-0de4-47be-a05e-6c5ddb3a0c41"
+      "id": "683b73f4-0de4-47be-a05e-6c5ddb3a0c41"
     }
   ],
   "auth": {
@@ -11265,10 +11026,9 @@
   ],
   "variable": [
     {
-      "id": "0298ce13-ea00-498f-9140-e22bf0faccb6",
+      "id": "77cb9a18-606a-40eb-b156-efc0cf5a401e",
       "key": "delayTime",
-      "value": "1000",
-      "type": "string"
+      "value": "1000"
     }
   ]
 }
